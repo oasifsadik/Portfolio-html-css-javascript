@@ -7,9 +7,10 @@
 
 .sidebar {
     background-color: rgb(117, 114, 114);
-    width: 434px;
+    /* width: 434px; */
     height: 100vh;
     font-family: 'Fira Sans', sans-serif;
+    transition: transform 0.3s ease-in;
 }
 
 .sidebar nav {
@@ -201,12 +202,33 @@
     border: 2px solid black;
 }
 
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.ham {
+    margin-top: 10px;
+}
+
+.cross {
+    margin-left: 185px;
+    margin-top: 10px;
+}
+
 @media (max-width: 1250px) {
     * {
         /* background-color: rgb(230, 152, 152); */
     }
-    .sidebar {
+    /* .sidebar {
         transform: translate(-443px, 0px);
         position: absolute;
-    }
+    } */
 }
